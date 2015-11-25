@@ -1,0 +1,18 @@
+{
+    "contents" : "# 设置一些常数和变量\n\n\n# =================== 业务成本 ================\n\nMARKET_CHANNELS = c(\"agent\", \"bank\", \"web\") # 业务渠道\n\nMORT = read.table(\"mort\", col.names = c(\"UA\", \"A\"))\n",
+    "created" : 1448260155898.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "83187306",
+    "id" : "81D3BB67",
+    "lastKnownWriteTime" : 1448414451,
+    "path" : "E:/zhangys/Documents/BP/RBP/conf.R",
+    "project_path" : "conf.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "type" : "r_source"
+}
