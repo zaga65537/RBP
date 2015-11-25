@@ -1,0 +1,18 @@
+{
+    "contents" : "# BAE 假设\n\n# ===================== 1 通用假设 =================\n\n# --------------------- 投资收益率假设 ----------------\n\n#  用于内含价值(EV)、新业务价值(VNB)、\n#       毛保费准备金(GPV)和现金流预测的投资收益率假设\n\nbae.inv_rate_df = data.frame(c()) ",
+    "created" : 1448442542075.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3961486525",
+    "id" : "D090C501",
+    "lastKnownWriteTime" : 1448442865,
+    "path" : "E:/zhangys/Documents/BP/RBP/bae.R",
+    "project_path" : "bae.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "type" : "r_source"
+}
