@@ -1,0 +1,17 @@
+{
+    "contents" : "# bea 假设\n\n# ===================== 1 通用假设 =================\n\n# --------------------- 投资收益率假设 ----------------\n\n#  用于内含价值(EV)、新业务价值(VNB)、\n#       毛保费准备金(GPV)和现金流预测的投资收益率假设\n\nbea.ev.inv_rate_df = data.frame(tr=0.05, par=0.05, uv=0.055)\nbea.vnb.inv_rate_df = bea.ev.inv_rate_df\nbea.gpv.inv_rate_df = bea.ev.inv_rate_df\n\n# 用于动态偿付能力测试（DST）的投资收益率假设\nbea.dst.inv_rate_df = data.frame(tr=0.046055, par=0.05, uv=0.055)\n\n#\tEV、VNB等使用的风险贴现率\nbea.ev.rdisc_rate = 0.12 # 年化\nbea.vnb.rdisc_rate = bea.ev.rdisc_rate\n\n# 财务报告准备金评估使用的贴现率\nbea.acnt.rdisc_rate = data.frame(par=0.05, uv=0.05)\n\n# 通胀率\nbea.inflation = 0.03\n\n# 分红利率和分红比例\nbea.par.bonus = read.csv(\"bea.par.bonus\")\n\n# 万能结算利率\nbea.uv.rate = read.csv(\"bea.uv.rate\")\n\n# 2.7\t保险保障基金 计提基础为保费收入\nbea.fund = read.csv(\"bea.fund\")\n\n#\t保险业务监管费\nbea.regular = read.csv(\"bea.regular\")\n\n# 税金\nbea.tax.comp = 0.25\nbea.tax.run = 0.055 # 短期（保险期间少于等于1年）意外险，按照毛保费收入的5.5%计提营业税金及附加\n\n\n\n# =============================== 个人营销渠道假设 ============================\n\n# agent commission\nbea.agent.commission = read.csv(\"bea.agent.commission.csv\")\n\n# indirect commission\nbea.agent.fyc = 1.2\nbea.agent.syc = 0.8\n\n# management fee 只有主险有每单的管理费用\nbea.agent.maintain = list(pol=40, prm=0.02)\nbea.agent.acquire = list(pol=160, prm=list(s=0.02, r=0.18))\n\n# death rate factor\nbea.agent.death_ratio = data.frame(m = c(0.71,0.76,0.82,0.88,0.94,1), f= c(0.69,0.75,0.81,0.88,0.94,1))\n\n# accident rate \n# 法定准备金评估、财务报告准备金评估和EV、GPV等报告编制采用100%以上经验假设\nbea.agent.accident = 0.0004\nbea.agent.public_traffic = 0.000078 \nbea.agent.private_traffic = 0.000054\nbea.agent.air = 0.000018 \n\n# CI 重疾发生率\n\n#\t法定报告准备金评估 100%重疾发生率与100%中国寿险业重疾发生率表（2006-2010）评估结果取大\nbea.ci_rates.ri = read.table(\"mort.ci.ri\", header = T)\nbea.ci_rates.ci6 = read.table(\"mort.ci.ci6\", header = T)\nbea.ci_rates.ci25 = read.table(\"mort.ci.ci25\", header = T)\nbea.agent.ci6 = data.frame(m=apply(cbind(bea.ci_rates.ri$m,bea.ci_rates.ci6$m), 1, max),f=apply(cbind(bea.ci_rates.ri$f,bea.ci_rates.ci6$f), 1, max))\nbea.agent.ci25 = data.frame(m=apply(cbind(bea.ci_rates.ri$m,bea.ci_rates.ci25$m), 1, max),f=apply(cbind(bea.ci_rates.ri$f,bea.ci_rates.ci25$f), 1, max))\n\n# 财务报告准备金评估和EV、GPV等报告编制：男性85%/女性70%重疾发生率，且在完全核保情形下考虑如下的选择因子\nbea.acnt.ci_factor = list(m=0.85, f=0.7)\n\n# lapse rate 非万能\nbea.agent.nuv.lapse = read.csv(\"bea.agent.nonuv.lapse.csv\")\n\n# 件均保额\nbea.agent.avg_sa = read.table(\"bea.agent.avg_sa\", header = T)\n\n# 短险数据\nbea.agent.short = read.csv(\"bea.agent.short.csv\")\n\n\n\n# ============================== 银保假设 ========================\n\n# 销售费用 数据采用2016年度，400亿规划\n\nbea.bank.commission = data.frame(cterm=c(1,2,3), fee=c(0.0489,0.05,0.065))\n\n\n",
+    "created" : 1448522768526.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "76038477",
+    "id" : "A093D505",
+    "lastKnownWriteTime" : 1448527368,
+    "path" : "E:/zhangys/Documents/BP/RBP/bea.R",
+    "project_path" : "bea.R",
+    "properties" : {
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "type" : "r_source"
+}
