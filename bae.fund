@@ -1,0 +1,7 @@
+prod_type, ratio
+grt_long_life, 0.0015
+grt_long_health, 0.0015
+ngrt_long_life, 0.0005
+ngrt_long_health, 0.0005
+short_health, 0.008
+short_accident, 0.008

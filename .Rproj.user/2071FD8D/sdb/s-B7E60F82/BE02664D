@@ -1,0 +1,25 @@
+{
+    "contents" : "",
+    "created" : 1448502177982.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "BE02664D",
+    "lastKnownWriteTime" : 27303570963497028,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "pm463d4urt",
+        "caption" : "bae.fund",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=bae.fund&cache_key=pm463d4urt",
+        "displayedObservations" : 6,
+        "environment" : "",
+        "object" : "bae.fund",
+        "totalObservations" : 6,
+        "variables" : 2
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "type" : "r_dataframe"
+}

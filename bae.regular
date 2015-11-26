@@ -1,0 +1,5 @@
+prod_type, ratio
+long_life, 0.0004
+long_health, 0.0004
+short_health, 0.0006
+accident, 0.0008

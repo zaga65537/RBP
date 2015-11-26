@@ -1,0 +1,25 @@
+{
+    "contents" : "",
+    "created" : 1448499294056.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "2B5432B9",
+    "lastKnownWriteTime" : 27303570963497028,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "om9cbv7l4r",
+        "caption" : "bae.inv_rate_df",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=bae.inv_rate_df&cache_key=om9cbv7l4r",
+        "displayedObservations" : "1",
+        "environment" : "",
+        "object" : "bae.inv_rate_df",
+        "totalObservations" : "1",
+        "variables" : "3"
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "type" : "r_dataframe"
+}
