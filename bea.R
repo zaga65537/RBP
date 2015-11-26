@@ -94,4 +94,18 @@ bea.agent.short = read.csv("bea.agent.short.csv")
 
 bea.bank.commission = data.frame(cterm=c(1,2,3), fee=c(0.0489,0.05,0.065))
 
+# 管理费
+# 非万能
+bea.bank.nuv.maintain = list(pol=40, prm=list(s=0, r=0.01))
+bea.bank.nuv.acquire = list(pol=100, prm=list(s=0.02, r=0.08))
+# 万能 只有主险
+bea.bank.uv.maintain = list(pol=20, prm=0)
+bea.bank.uv.acquire = list(pol=50, prm=1)
+# 死亡率 EV GPV
+bea.bank.death_ratio = data.frame(m=0.85, f=0.8)
+
+# 意外发生率
+
+
+
 
